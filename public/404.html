@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Single Page Application / Sub-path redirect for GitHub Pages
+      var currentPath = window.location.pathname;
+      var cleanPath = currentPath.replace(/^\/portfolio\/?/, "");
+      var targetUrl = "https://priyanshu7739410.github.io/" + (cleanPath ? cleanPath : "") + window.location.search + window.location.hash;
+      window.location.replace(targetUrl);
+    </script>
+    <meta http-equiv="refresh" content="0; url=https://priyanshu7739410.github.io/" />
+  </head>
+  <body>
+    <p>Redirecting to <a href="https://priyanshu7739410.github.io/">priyanshu7739410.github.io</a>...</p>
+  </body>
+</html>
