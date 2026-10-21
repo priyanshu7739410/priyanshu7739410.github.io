@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "feed": {
+    "url": "",
+    "title": "",
+    "link": "",
+    "author": "",
+    "description": "",
+    "image": ""
+  },
+  "items": [
+    {
+      "title": "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      "pubDate": "2020-05-06 12:00:00",
+      "link": "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+      "guid": "1",
+      "author": "Saad Pasta",
+      "thumbnail": "",
+      "description": "<p>Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?</p>",
+      "content": "<p>Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?</p>"
+    },
+    {
+      "title": "Why REACT is The Best?",
+      "pubDate": "2020-04-15 12:00:00",
+      "link": "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      "guid": "2",
+      "author": "Saad Pasta",
+      "thumbnail": "",
+      "description": "<p>React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.</p>",
+      "content": "<p>React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.</p>"
+    }
+  ]
+}

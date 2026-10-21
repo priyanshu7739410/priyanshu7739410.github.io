@@ -1,0 +1,100 @@
+{
+  "data": {
+    "user": {
+      "name": "Priyanshu",
+      "bio": "AI & Systems Engineer | Generative AI · Agentic Systems · Cloud Engineering. IIT Kharagpur.",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/175084036?v=4",
+      "location": "IIT Kharagpur, India",
+      "pinnedItems": {
+        "totalCount": 5,
+        "edges": [
+          {
+            "node": {
+              "name": "mini_container",
+              "description": "📦 Lightweight Linux container runtime implemented using namespaces, cgroups v2, and pivot_root",
+              "forkCount": 0,
+              "stargazers": {
+                "totalCount": 8
+              },
+              "url": "https://github.com/priyanshu7739410/mini_container",
+              "id": "repo-mini-container",
+              "diskUsage": 420,
+              "primaryLanguage": {
+                "name": "C++",
+                "color": "#f34b7d"
+              }
+            }
+          },
+          {
+            "node": {
+              "name": "container-observability-platform",
+              "description": "🔍 Companion C++ daemon for container discovery and telemetry monitoring via /sys/fs/cgroup",
+              "forkCount": 0,
+              "stargazers": {
+                "totalCount": 6
+              },
+              "url": "https://github.com/priyanshu7739410/container-observability-platform",
+              "id": "repo-container-obs",
+              "diskUsage": 380,
+              "primaryLanguage": {
+                "name": "C++",
+                "color": "#f34b7d"
+              }
+            }
+          },
+          {
+            "node": {
+              "name": "NERA",
+              "description": "🧭 AI-Based Smart Logistics & Accessibility Intelligence Platform (SIH 2026 Top 10 at IIT KGP)",
+              "forkCount": 2,
+              "stargazers": {
+                "totalCount": 15
+              },
+              "url": "https://github.com/Ankitjordan/NERA",
+              "id": "repo-nera",
+              "diskUsage": 2048,
+              "primaryLanguage": {
+                "name": "Go",
+                "color": "#00ADD8"
+              }
+            }
+          },
+          {
+            "node": {
+              "name": "erp1",
+              "description": "🏥 MediCloud — Healthcare management backend with FastAPI, PostgreSQL, SQLAlchemy & Docker",
+              "forkCount": 0,
+              "stargazers": {
+                "totalCount": 5
+              },
+              "url": "https://github.com/priyanshu7739410/erp1",
+              "id": "repo-medicloud",
+              "diskUsage": 512,
+              "primaryLanguage": {
+                "name": "Python",
+                "color": "#3572A5"
+              }
+            }
+          },
+          {
+            "node": {
+              "name": "networksecurity",
+              "description": "🛡️ End-to-end machine learning pipeline for phishing detection with drift detection and MLOps",
+              "forkCount": 1,
+              "stargazers": {
+                "totalCount": 7
+              },
+              "url": "https://github.com/priyanshu7739410/networksecurity",
+              "id": "repo-network-security",
+              "diskUsage": 890,
+              "primaryLanguage": {
+                "name": "Python",
+                "color": "#3572A5"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
