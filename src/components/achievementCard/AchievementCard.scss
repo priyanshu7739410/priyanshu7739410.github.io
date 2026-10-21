@@ -1,77 +1,118 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
-}
-.card-title {
-  color: $titleColor;
-  font-size: 1.375rem;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
-}
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
-}
-.certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.certificate-detail-div {
-  text-align: center;
-}
-.certificate-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.dark-mode.certificate-card:hover {
-  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
-}
-.certificate-image-div {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-}
-.certificate-card-footer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.achievement-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+
+  &.dark-mode {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &:first-child {
+    padding-top: 0.5rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.achievement-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
-.certificate-card-footer span.certificate-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
+
+.achievement-list-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+
+  &.dark-mode {
+    color: #f8fafc !important;
+  }
+}
+
+.achievement-list-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+  max-width: 950px;
+
+  &.dark-mode {
+    color: #94a3b8 !important;
+  }
+}
+
+.achievement-list-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
   align-items: center;
-  border-radius: 4px;
-  display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
 }
-span.certificate-tag:hover {
-  background: $buttonHover;
+
+.achievement-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #4f46e5;
+    color: #ffffff;
+    border-color: #4f46e5;
+    transform: translateY(-1px);
+  }
+
+  &.dark-mode {
+    background: rgba(99, 102, 241, 0.12);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.28);
+
+    &:hover {
+      background: #6366f1;
+      color: #ffffff;
+      border-color: #6366f1;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .achievement-list-title {
+    font-size: 1.2rem;
+  }
+  .achievement-list-desc {
+    font-size: 0.95rem;
+  }
 }

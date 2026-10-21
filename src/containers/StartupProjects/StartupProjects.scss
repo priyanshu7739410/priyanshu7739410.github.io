@@ -1,90 +1,130 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
-}
-.card-title {
-  color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
-}
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
-}
-.project-card {
+.projects-list-container {
   display: flex;
   flex-direction: column;
-  background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  justify-content: center;
-}
-.project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
-.project-detail {
-  text-align: center;
-}
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
+.project-list-item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+
+  &.dark-mode {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &:first-child {
+    padding-top: 0.5rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.project-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-list-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+
+  &.dark-mode {
+    color: #f8fafc !important;
+  }
+}
+
+.project-index {
+  color: #6366f1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.project-list-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+  max-width: 950px;
+
+  &.dark-mode {
+    color: #94a3b8 !important;
+  }
+}
+
+.project-list-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
   align-items: center;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-}
-
-.project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 4px;
+.project-link-btn {
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #4f46e5;
+    color: #ffffff;
+    border-color: #4f46e5;
+    transform: translateY(-1px);
+  }
+
+  &.dark-mode {
+    background: rgba(99, 102, 241, 0.12);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.28);
+
+    &:hover {
+      background: #6366f1;
+      color: #ffffff;
+      border-color: #6366f1;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+  .project-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .project-list-title {
+    font-size: 1.2rem;
+  }
+  .project-list-desc {
+    font-size: 0.95rem;
   }
 }

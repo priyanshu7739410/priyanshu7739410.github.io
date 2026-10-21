@@ -41,12 +41,11 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 0;
 }
 
 .education-card-right {

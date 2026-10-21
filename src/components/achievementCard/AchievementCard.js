@@ -2,47 +2,52 @@ import React from "react";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
-  function openUrlInNewTab(url, name) {
-    if (!url) {
-      console.log(`URL for ${name} not found`);
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   return (
-    <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
-      <div className="certificate-image-div">
-        <img
-          src={cardInfo.image}
-          alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
-        ></img>
-      </div>
-      <div className="certificate-detail-div">
-        <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
+    <div
+      className={
+        isDark ? "dark-mode achievement-list-item" : "achievement-list-item"
+      }
+    >
+      <div className="achievement-list-header">
+        <h3
+          className={
+            isDark
+              ? "dark-mode achievement-list-title"
+              : "achievement-list-title"
+          }
+        >
           {cardInfo.title}
-        </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
-        </p>
+        </h3>
+        {cardInfo.footer && cardInfo.footer.length > 0 && (
+          <div className="achievement-list-links">
+            {cardInfo.footer.map((v, i) => {
+              if (!v.url) return null;
+              return (
+                <a
+                  key={i}
+                  href={v.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    isDark
+                      ? "dark-mode achievement-link-btn"
+                      : "achievement-link-btn"
+                  }
+                >
+                  {v.name} ↗
+                </a>
+              );
+            })}
+          </div>
+        )}
       </div>
-      <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
-            <span
-              key={i}
-              className={
-                isDark ? "dark-mode certificate-tag" : "certificate-tag"
-              }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
-            >
-              {v.name}
-            </span>
-          );
-        })}
-      </div>
+      <p
+        className={
+          isDark ? "dark-mode achievement-list-desc" : "achievement-list-desc"
+        }
+      >
+        {cardInfo.description}
+      </p>
     </div>
   );
 }

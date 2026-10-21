@@ -44,13 +44,28 @@
 
 .greeting-text {
   font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.dark-mode.greeting-text,
+.dark-mode .greeting-text {
+  color: #ffffff !important;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 38px;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.dark-mode.greeting-text-p,
+.dark-mode .greeting-text-p {
+  color: #cbd5e1 !important;
 }
 
 .greeting-image-div > img {

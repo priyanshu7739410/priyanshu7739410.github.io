@@ -46,6 +46,30 @@ export default function GithubProfileCard({prof}) {
                 Open for opportunities: {prof.hireable}
               </span>
             </div>
+            {contactInfo.email_address && (
+              <div style={{marginTop: "5px", marginBottom: "8px"}}>
+                <a
+                  className="contact-detail-email"
+                  href={"mailto:" + contactInfo.email_address}
+                  style={{color: "inherit", textDecoration: "none", fontSize: "18px", display: "inline-flex", alignItems: "center", gap: "8px"}}
+                >
+                  <i className="fas fa-envelope"></i>
+                  {contactInfo.email_address}
+                </a>
+              </div>
+            )}
+            {contactInfo.number && (
+              <div style={{marginBottom: "16px"}}>
+                <a
+                  className="contact-detail"
+                  href={"tel:" + contactInfo.number}
+                  style={{color: "inherit", textDecoration: "none", fontSize: "18px", display: "inline-flex", alignItems: "center", gap: "8px"}}
+                >
+                  <i className="fas fa-phone-alt"></i>
+                  {contactInfo.number}
+                </a>
+              </div>
+            )}
             <SocialMedia />
           </div>
           <div className="image-content-profile">

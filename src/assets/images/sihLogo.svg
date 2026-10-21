@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sih-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="50%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="20" fill="url(#sih-bg)"/>
+  <circle cx="200" cy="85" r="55" fill="rgba(255,255,255,0.08)" />
+  <!-- Trophy Cup -->
+  <g transform="translate(200, 85)">
+    <!-- Cup Body -->
+    <path d="M-18,-24 L18,-24 C18,0 12,12 0,16 C-12,12 -18,0 -18,-24 Z" fill="#facc15" stroke="#ffffff" stroke-width="2" />
+    <!-- Handles -->
+    <path d="M-18,-18 C-28,-18 -28,-6 -18,-2" fill="none" stroke="#facc15" stroke-width="3" stroke-linecap="round" />
+    <path d="M18,-18 C28,-18 28,-6 18,-2" fill="none" stroke="#facc15" stroke-width="3" stroke-linecap="round" />
+    <!-- Stem & Base -->
+    <rect x="-4" y="16" width="8" height="12" fill="#facc15" />
+    <rect x="-14" y="28" width="28" height="6" rx="2" fill="#ffffff" />
+    <!-- Star on cup -->
+    <polygon points="0,-12 3,-4 10,-4 5,1 7,8 0,4 -7,8 -5,1 -10,-4 -3,-4" fill="#ffffff" />
+  </g>
+  <text x="200" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">SIH 2026</text>
+  <text x="200" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#fef08a" text-anchor="middle" letter-spacing="1">TOP 10 AT IIT KHARAGPUR</text>
+</svg>
